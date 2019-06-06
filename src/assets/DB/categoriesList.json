@@ -1,0 +1,39 @@
+[
+    {
+        "id" : "1",
+        "name" : "الفلسفة",
+        "imageUrl" : "../assets/images/philosofy.png"
+
+    },
+    {
+        "id" : "2",
+        "name" : "الكيمياء",
+        "imageUrl": "../assets/images/chemisty.png"
+
+    },
+    {
+        "id" : "3",
+        "name" : "الفيزياء",
+        "imageUrl": "../assets/images/physics.png"
+
+    },
+    {
+        "id" : "4",
+        "name" : "الديانات",
+        "imageUrl": "../assets/images/diyanat.png"
+
+    },
+    {
+        "id" : "5",
+        "name" : "تاريخ",
+        "imageUrl": "../assets/images/history.png"
+
+    },
+    {
+        "id" : "6",
+        "name" : "حضارات",
+        "imageUrl": "../assets/images/hadarat.png"
+
+    }
+
+]

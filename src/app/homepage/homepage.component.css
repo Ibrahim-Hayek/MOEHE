@@ -1,0 +1,435 @@
+.HomePageBanner {
+    height: calc(100vh - 100px);
+    background: URL('../../assets/images/Section2Container.png');
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.BannerSearchHolder {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) !important;
+    width: 100%;
+    height: 166px;
+    background-color: rgba(155, 155, 155, 0.63);
+    border: 1px solid #979797;
+}
+.BannerSearchHolder {
+    text-align: center;
+    padding-top: 48px;
+}
+
+.BannerSearchHolder ::ng-deep ng-select#booksCategories {
+    height: 68px;
+    display: inline-block;
+    border: 1px solid #979797;
+    background-color: #D8D8D8 !important;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.BannerSearchHolder input#SearhBannerInput {
+    display: inline-block;
+    height: 67px;
+    color: #9B9B9B;
+    font-size: 20px;
+    line-height: 38px;
+    padding: 0 14px;
+}
+
+.BannerSearchHolder ::ng-deep  ng-select#booksCategories  .ng-select-container {
+    height: 100%;
+    color: #000000;
+    font-size: 18px;
+    line-height: 34px;
+    background-color: #D8D8D8 !important;
+    padding: 0 13px;
+    min-width: 140px;
+}
+
+.BannerSearchHolder ::ng-deep  ng-select#booksCategories span.ng-clear-wrapper {
+    display: none;
+}
+
+button.MOEButton.SearchBannerButton {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    height: 66px;
+}
+.booksListingComponent {
+    margin-top: 75px;
+}
+
+h2.HPTitle {
+    color: #004D61;
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 92px;
+    text-align: center;
+}
+::ng-deep body .ui-tabview.ui-tabview-top .ui-tabview-nav {
+    text-align: center;
+}
+
+::ng-deep .ui-tabview .ui-tabview-nav li {
+    float: none;
+    display: inline-block;
+}
+
+::ng-deep body .ui-tabview.ui-tabview-top .ui-tabview-nav li {background-color: transparent;border: 0;}
+
+::ng-deep body .ui-tabview.ui-tabview-top .ui-tabview-nav li.ui-state-active {
+    background: transparent;
+    border: 0;
+}
+
+::ng-deep body .ui-tabview.ui-tabview-top .ui-tabview-nav li a, 
+::ng-deep body .ui-tabview.ui-tabview-top .ui-tabview-nav li.ui-state-active a {
+   	color: #4A4A4A;	font-size: 28px;line-height: 56px;padding-bottom: 5px !important;font-weight: 300
+} 
+::ng-deep body  .HomepageNewsComponent .ui-tabview .ui-tabview-panels {
+    background-color: #f3f3f3;
+}
+::ng-deep body .ui-tabview.ui-tabview-top .ui-tabview-nav li.ui-state-active:before {
+    content: "";
+    height: 6px;
+    width: calc(100% - 60px);
+    position: absolute;
+    bottom: 0;
+    background-color: #4A4A4A;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+::ng-deep body .ui-tabview.ui-tabview-top .ui-tabview-nav li.ui-tabview-selected a:focus {
+    border: 0 !important;outline-color:transparent;  outline: 0;
+    outline-offset: 0;
+}
+
+::ng-deep body .ui-tabview.ui-tabview-top .ui-tabview-nav li.ui-state-active:hover {
+    border: 0 !important;
+    background-color: transparent;
+}
+
+::ng-deep body .ui-tabview.ui-tabview-top .ui-tabview-nav li.ui-state-active:hover a {
+    color: #4a4a4a;
+}
+
+::ng-deep body .ui-tabview.ui-tabview-top .ui-tabview-nav li:hover {
+    border: 0 !important;
+    background-color: transparent;
+}
+
+::ng-deep body .ui-tabview.ui-tabview-top .ui-tabview-nav li:not(.ui-state-active):not(.ui-state-disabled):hover {
+        border: 0 !important;
+    background-color: transparent;
+}
+
+a:focus {
+    outline: 0;
+    outline-offset: 0;
+}
+ 
+.HomePageBookItem img {
+    width: 100%;
+     object-fit: cover;
+    max-width: 100%;
+    min-height: 230px;
+}
+
+
+
+::ng-deep  body .ui-tabview .ui-tabview-panels {
+    border: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+::ng-deep  body .ui-tabview.ui-tabview-top .ui-tabview-nav {
+    margin-bottom: 20px;
+}
+.booksListingComponent h2.HPTitle {margin-bottom: -16px;}
+
+.bookDetailsContent {
+    border: 1px solid #979797;
+    background: white;
+    border-top: 0;
+    padding: 22px 18px;
+}
+
+.bookDetailsContent h3 {
+    margin-top: 0;
+    font-size: 24px;
+    line-height: 40px;
+    margin-bottom: 0;
+    color: #000000;
+}
+
+.bookDetailsContent h5 {
+    color: #4A4A4A;
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 0;
+}
+.bookController button.MOEButton {
+    height: 38px;
+    padding: 5px 10px;
+    font-size: 13px;
+}
+
+ button.MOEButton.whiteInverse {
+    margin-left: 12px;
+    background: white;
+    color: #FF502F;
+    border: 1px solid #FF502F;
+}
+
+ button.MOEButton.whiteInverse:hover {
+    background: #FF502F;
+    color: white;
+}
+.bookController {
+    margin-top: 40px;
+}
+.bookController button {
+    border-radius: 15px;
+}
+
+.readMoreHolder {
+    text-align: center;
+    margin-top: 10px;
+    clear: both;
+}
+
+.readMoreHolder {}
+
+.readMoreHolder button.ReadMoreBooks {
+    height: 45px;
+    border-radius: 15px;
+    font-size: 16px;
+}
+.categorySingleItem img {
+    width: 100px;
+    display: inline-block;
+}
+
+.HomePageBooksCategories {border: 1px solid #979797;background-color: #004D61;margin-top: 100px;}
+
+.categorySingleItem {
+    border: 1px solid #979797;
+    background-color: #FFFFFF;
+}
+.booksListingComponent .readMoreHolder {
+    margin-top: 45px;
+}
+.HomePageBooksCategories > h2 {
+    color: #FFFFFF;
+    font-size: 48px;
+    line-height: 92px;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.categorySingleItem h3 {
+    color: #000000;
+    font-size: 40px;
+    line-height: 76px;
+    display: inline-block;
+    padding: 0 24px;
+}
+.HomePageBooksCategories .readMoreHolder {
+    margin-top: 0;
+    margin-bottom: 45px;
+}
+.categorySingleItem {
+    min-height: 170px;
+    margin-bottom: 70px;
+    padding: 24px;
+}
+button.CategoriesReadMore.MOEButton.whiteInverse {
+    border: 1px solid #4173C3;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    color: #4173C3;
+    font-size: 16px;
+    line-height: 18px;
+}
+button.CategoriesReadMore.MOEButton.whiteInverse:hover {
+    background: #FF502F;
+    color: white;
+    border: 1px solid #FF502F;
+}
+::ng-deep  .carousel-item {
+    height: 0;
+    opacity: 0;
+    transition: 1s;
+    display: none
+}
+
+::ng-deep .carousel-item.active {
+    opacity: 1;
+    transition: 1s;
+    height: auto;
+    display: block
+}
+.HomepageNewsComponent > h2 {
+    color: #000000;
+    font-size: 48px;
+    line-height: 92px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 24px;
+}
+.HomepageNewsComponent {
+    border: 1px solid #BEBEBE;
+    background-color: #F3F3F3;
+}
+ 
+::ng-deep .carousel-item .newsTopDetails {
+    display: none;
+}
+
+::ng-deep .carousel-item.active .newsTopDetails {
+    display: block;
+}
+
+.newsTopDetails h3 {
+    color: #4A4A4A;
+    font-size: 30px;
+    line-height: 40px;
+    margin: 0;
+}
+
+.newsTopDetails h5 {
+    color: #9B9B9B;
+    font-family: "Droid Arabic Kufi";
+    font-size: 15px;
+    line-height: 30px;
+    margin: 0;
+}
+
+.newsTopDetails {
+    padding: 14px 45px;
+    background: white;
+    border: 1px solid #bebebe;
+}
+ 
+::ng-deep .carousel-item img {
+    max-height: 470px;
+    width: 100%;
+    object-fit: cover;
+}
+
+::ng-deep .carousel-caption {
+    width: 100%;
+    right: 0;
+    left: 0;
+    text-align: right;
+    border: 1px solid #979797;
+    background-color: rgba(216, 216, 216, 0.7);
+    bottom: 0;
+}
+
+::ng-deep .carousel-caption p {
+    color: #000000;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 32px;
+    padding: 0 45px;
+}
+ 
+::ng-deep  .HomepageNewsComponent ol.carousel-indicators {
+    bottom: -60px;
+    padding: 0;
+}
+
+::ng-deep  .carousel-indicators li {
+    background: black;
+    border: 3px solid black;
+    width: 16px;
+    height: 16px;
+    margin: 0 4px;
+}
+
+::ng-deep  .carousel-indicators .active {
+    background: white;
+    border: 3px solid black;
+    width: 16px;
+    height: 16px;
+    margin: 0 4px;
+}
+
+:focus {
+    outline: none;
+}
+
+ 
+::ng-deep .HomepageNewsComponent .readMoreHolder {
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+.HomePageFooter {
+    padding: 55px 0;
+}
+
+.HomePageFooter .footerTitle h3 {
+    color: #000000;
+    font-size: 35px;
+    line-height: 67px;
+}
+
+.FooterTimeHolder img {
+    width: 60px;
+    margin-bottom: 20px;
+}
+
+.FooterTimeHolder p {
+    color: #000000;
+    font-size: 17px;
+    line-height: 32px;
+    margin-bottom: 0;
+}
+.FooterContactHolder p {
+    color: #000000;
+    font-size: 17px;
+    line-height: 32px;
+}
+.FooterContactHolder textarea {
+    width: calc(100%) !important;
+    height: 130px !important;
+    resize: none;
+    padding: 12px !important;
+    margin-bottom: 12px !important;
+    border-top: 1px solid #c6c6c6; 
+}
+
+ 
+.FastLinksHolder a.linkHolder {
+    display: block;
+    margin-bottom: 8px;
+}
+.HomepageNewsComponent  h2, .HomePageBooksCategories h2 {
+    font-weight: bold;
+}
+.HomepageNewsComponent h2 {
+    margin-top: 70px;
+    color: #004D61;
+    font-size: 48px;
+    line-height: 60px;
+    text-align: center;
+    margin-bottom:38px
+}
+ 
+
+.footerItemHolder {
+    background-color: #F3F3F3;
+    padding: 4px 26px 40px;
+    min-height: 380px;
+}
+.categorySingleItem:hover {
+    cursor: pointer;
+    background: rgb(224, 239, 243)
+}

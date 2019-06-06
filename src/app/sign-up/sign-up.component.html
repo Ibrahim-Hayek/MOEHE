@@ -1,0 +1,107 @@
+<app-header></app-header>
+<div class="signUPStepperHolder">
+  <div class="container">
+      <mat-horizontal-stepper [linear]="isLinear" #stepper dir="rtl">
+          <mat-step [stepControl]="firstFormGroup">
+            <form [formGroup]="firstFormGroup">
+              <ng-template matStepLabel>{{personalData}}</ng-template>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <mat-form-field>
+                <input matInput [placeholder]="Firstname" formControlName="firstCtrl" required>
+              </mat-form-field>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <mat-form-field>
+                  <input matInput [placeholder]="Lastname" formControlName="firstCtrl" required>
+                </mat-form-field>
+              </div>
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <mat-form-field>
+                    <input matInput [matDatepicker]="picker" formControlName="firstCtrl" [placeholder]="ChooseAdate">
+                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                  </mat-form-field>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                  <mat-form-field>
+                      <input matInput [placeholder]="Email" formControlName="firstCtrl" required>
+                  </mat-form-field>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                  <mat-form-field>
+                    <mat-label>{{SelectAddress}}</mat-label>
+                    <mat-select required>
+                      <mat-option *ngFor="let country of countriesList" [value]="country.translations.fa">
+                        {{country.translations.fa}}
+                      </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                  <mat-form-field>
+                    <input matInput [placeholder]="phonenumber" formControlName="firstCtrl" required>
+                </mat-form-field>
+              </div>
+              <div class="FormNextBackHolder"> 
+                <button class="MOEButton FormNext" mat-button matStepperNext>{{NextButton}}</button>
+              </div>
+            </form>
+          </mat-step>
+
+          <mat-step [stepControl]="secondFormGroup">
+            <form [formGroup]="secondFormGroup" class="educationSingleFormHolder">
+              <ng-template matStepLabel>{{educationalData}}</ng-template>
+               <div class="col-md-6 col-sm-6 col-xs-12"  *ngFor="let input of inputs" [ngClass]="{ClearLeftRight: input.type == 'fileupload'}">
+              <mat-form-field *ngIf="input.type == 'text'" >
+                  <input  matInput [placeholder]="input.value" formControlName="secondCtrl" required>
+              </mat-form-field>
+              <p-fileUpload *ngIf="input.type == 'fileupload'" name="myfile[]" url="./upload.php">
+              </p-fileUpload>
+            </div>
+ 
+            <button class="addinputs MOEButton" (click)="addInput()">{{AddInput}}</button>
+            <button class="addinputs MOEButton" (click)="removeInputs()">{{deleteLast}}</button>
+
+               <div class="FormNextBackHolder">
+                <button  class="MOEButton whiteInverse FormBack"  mat-button matStepperPrevious>{{BackButton}}</button>
+                <button  class="MOEButton FormNext"  mat-button matStepperNext>{{NextButton}}</button>
+              </div>
+            </form>
+          </mat-step>
+
+          <mat-step >
+              <form >
+
+             <ng-template matStepLabel>{{finalStep}}</ng-template>
+          <div class="col-md-6 col-sm-6 col-xs-12">
+              <mat-form-field>
+                <input matInput [placeholder]="UserName"  required>
+              </mat-form-field>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <mat-form-field>
+                  <input matInput [placeholder]="Password"  required>
+                </mat-form-field>
+              </div>
+
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                  <mat-form-field>
+                      <input matInput [placeholder]="ConfirmPassword"  required>
+                    </mat-form-field>
+                  </div>
+                  <div class="clearfix"></div>
+                  <div class="col-md-6 col-sm-6 col-xs-12">
+                      <p-multiSelect name="categoriesSelectItems" [defaultLabel]="defaultLabel" [options]="categoriesSelectItems" [selectedItemsLabel]="this.selectedCategories.length+1+ ' ' + selectedItemsLabel" [(ngModel)]="selectedCategories" ></p-multiSelect>
+                     <p *ngIf="selectedCategories.length>0" class="selectedCategories">{{SelectedCategoriesTopLabel}}: {{selectedCategories}}</p>
+                   </div>
+                   <div class="clearfix"></div>
+
+             <div class="FormNextBackHolder">
+              <button class="MOEButton whiteInverse FormBack"  mat-button matStepperPrevious>Back</button>
+              <button class="MOEButton FormNextBack"  mat-button (click)="stepper.reset()">{{ResetButton}}</button>
+            </div>
+          </form></mat-step>
+        </mat-horizontal-stepper>
+  </div>
+</div>
+<app-footer></app-footer>

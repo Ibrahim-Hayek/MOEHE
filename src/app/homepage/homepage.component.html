@@ -1,0 +1,227 @@
+<app-header ></app-header>
+
+<div class="HomePageBanner">
+  <div class="BannerSearchHolder"  data-aos="fade-up" data-aos-duration="3000">
+      <ng-select id="booksCategories" [ngModel]="selectedCategory" [items]="booksCategories" placeholder="{{booksCategoriesPlaceHolder}}"></ng-select>
+      <input id="SearhBannerInput" placeholder="{{booknameSearchPlaceHolder}}">
+      <button class="MOEButton SearchBannerButton " >
+          <img src="../../assets/images/searchIcon.png"/>
+      </button>
+   </div>
+</div>
+
+  <div class="container-fluid">
+  <div class="booksListingComponent">
+    <h2 data-aos="fade-left" data-aos-offset="70"
+    data-aos-duration="1000" data-aos-easing="ease-in-sine" class="HPTitle">{{ReadBooksTitle}}</h2>
+    <p-tabView>
+        <p-tabPanel header="{{newArrival}}">
+  <div class="listOFFourBooks">
+          <div class="col-md-3 col-sm-6 col-xs-12" *ngFor="let book of BooksFirstFour"
+          data-aos="fade-up" data-aos-offset="100"
+          data-aos-duration="1000" data-aos-easing="ease-in-sine" >
+            <div class="HomePageBookItem">
+              <img src="{{book.imageUrl}}"/>
+              <div class="bookDetailsContent">
+                  <h3>{{book.name}}</h3>
+                  <h5>{{book.author}}</h5>
+                <div class="bookController">
+                  <button (click)="goToBookDetails()" class="MOEButton whiteInverse">{{BookDetails}}</button>
+                  <button class="MOEButton">{{BorrowBook}}</button>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+  <div class="readMoreHolder">
+        <button class="MOEButton ReadMoreBooks whiteInverse">{{ReadMoreBooks}}</button>
+      </div>
+      </p-tabPanel>
+
+        <p-tabPanel header=" {{mostRated}}">
+            <div class="listOFFourBooks">
+                <div class="col-md-3 col-sm-6 col-xs-12" *ngFor="let book of sortedBooksByRate"
+                data-aos="fade-up"  data-aos-duration="1000" data-aos-offset="100" data-aos-easing="ease-in-sine" >
+                  <div class="HomePageBookItem">
+                    <img src="{{book.imageUrl}}"/>
+                    <div class="bookDetailsContent">
+                        <h3>{{book.name}}</h3>
+                        <h5>{{book.author}}</h5>
+                      <div class="bookController">
+                        <button  (click)="goToBookDetails()"  class="MOEButton whiteInverse">{{BookDetails}}</button>
+                        <button class="MOEButton">{{BorrowBook}}</button>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="readMoreHolder">
+                  <button class="MOEButton ReadMoreBooks whiteInverse">{{ReadMoreBooks}}</button>
+            </div>
+        </p-tabPanel>
+        
+        <p-tabPanel *ngIf="loggedIn" header=" {{ChosenForYou}}">
+            <div class="listOFFourBooks">
+                <div class="col-md-3 col-sm-6 col-xs-12" *ngFor="let book of ChosenForYouBooks"
+                data-aos="fade-up" data-aos-offset="100" 
+                data-aos-duration="1000" data-aos-easing="ease-in-sine"  >
+                  <div class="HomePageBookItem">
+                    <img src="{{book.imageUrl}}"/>
+                    <div class="bookDetailsContent">
+                        <h3>{{book.name}}</h3>
+                        <h5>{{book.author}}</h5>
+                      <div class="bookController">
+                        <button  (click)="goToBookDetails()"  class="MOEButton whiteInverse">{{BookDetails}}</button>
+                        <button class="MOEButton">{{BorrowBook}}</button>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="readMoreHolder">
+                  <button class="MOEButton ReadMoreBooks whiteInverse">{{ReadMoreBooks}}</button>
+            </div>
+        </p-tabPanel>
+        
+    </p-tabView>
+  </div>
+</div>
+
+<div class="HomePageBooksCategories"  >
+  <h2 
+  data-aos="fade-left" data-aos-offset="70" data-aos-duration="1000" data-aos-easing="ease-in-sine">
+  {{BooksCategoriesCompTitle}}</h2>
+  <div class="listOfCategoriesHolder">
+    <div class="container-fluid">
+    <div class="col-md-4 col-sm-6 col-xs-12" *ngFor="let category of categoriesArray" 
+    data-aos="flip-right" data-aos-duration="1000">
+      <div class="categorySingleItem">
+        <img src="{{category.imageUrl}}"/>
+        <h3>{{category.name}}</h3>
+      </div>
+    </div>
+    </div>
+  </div>
+  <div class="clearfix"></div>
+  <div class="readMoreHolder">
+      <button class="CategoriesReadMore MOEButton  whiteInverse">{{ReadMoreBooks}}</button>
+</div>
+</div>
+
+
+<div class="HomepageNewsComponent" *ngIf="newsList != undefined"
+data-aos="fade-up" data-aos-duration="1000" data-aos-offset="300">
+<div class="container-fluid" *ngIf="!loggedIn">
+    <h2  data-aos="fade-left" data-aos-offset="70" data-aos-duration="1000" data-aos-easing="ease-in-sine">{{NewsComponentTitle}}</h2>
+    <ngb-carousel *ngIf="newsList != undefined">
+      <ng-template ngbSlide *ngFor=" let news of newsList">
+        <div class="newsTopDetails">
+            <h3>{{news.title}}</h3>
+            <h5>{{news.date}}</h5>
+          </div>
+        <img [src]="news.source" alt="Random first slide">
+        <div class="carousel-caption">
+          <p>{{news.alt}}</p>
+        </div>
+      </ng-template>
+    </ngb-carousel>
+    <div class="readMoreHolder">
+        <button class="CategoriesReadMore MOEButton  whiteInverse">{{ReadMoreBooks}}</button>
+  </div>
+  </div>
+
+  <div class="container-fluid" *ngIf="loggedIn">
+      <h2 >{{MediaCenterComponentTitle}}</h2>
+
+      <p-tabView>
+          <p-tabPanel header="{{NewsComponentTitle}}">
+              <ngb-carousel *ngIf="newsList != undefined">
+                  <ng-template ngbSlide *ngFor=" let news of newsList">
+                    <div class="newsTopDetails">
+                        <h3>{{news.title}}</h3>
+                        <h5>{{news.date}}</h5>
+                      </div>
+                    <img [src]="news.source" alt="Random first slide">
+                    <div class="carousel-caption">
+                      <p>{{news.alt}}</p>
+                    </div>
+                  </ng-template>
+                </ngb-carousel>
+                <div class="readMoreHolder">
+                    <button class="CategoriesReadMore MOEButton  whiteInverse">{{ReadMoreBooks}}</button>
+              </div>
+        </p-tabPanel>
+          
+        <p-tabPanel header="{{twittes}}">
+            <ngb-carousel *ngIf="tweetsList != undefined">
+                <ng-template ngbSlide *ngFor=" let tweet of tweetsList">
+                  <div class="newsTopDetails">
+                      <h3>{{tweet.title}}</h3>
+                      <h5>{{tweet.date}}</h5>
+                    </div>
+                  <img [src]="tweet.source" alt="Random first slide">
+                  <div class="carousel-caption">
+                    <p>{{tweet.alt}}</p>
+                  </div>
+                </ng-template>
+              </ngb-carousel>
+              <div class="readMoreHolder">
+                  <button class="CategoriesReadMore MOEButton  whiteInverse">{{ReadMoreBooks}}</button>
+            </div>
+      </p-tabPanel>
+      
+      </p-tabView>
+  </div>
+
+</div>
+
+<div class="HomePageFooter">
+  <div class="container-fluid">
+    <div class="col-md-4 col-sm-12 col-xs-12"  data-aos="flip-right" data-aos-duration="1000">
+      <div class="footerItemHolder">
+      <div class="footerTitle">
+        <h3>{{libraryTime}}</h3>
+      </div>
+      <div class="FooterTimeHolder">
+      <img src="../../assets/images/clock.png"/>
+      <p>{{fromToDays}}</p>
+      <p>{{fromToHours}}</p>
+      </div>
+    </div>
+  </div>
+      <div class="col-md-4 col-sm-12 col-xs-12"  data-aos="flip-right" data-aos-duration="1000">
+          <div class="footerItemHolder">
+              <div class="footerTitle">
+              <h3>{{contactUs}}</h3>
+            </div>
+            <div class="FooterContactHolder">
+              <p>{{sendYourText}}</p>
+              <textarea></textarea>
+              <button class="MOEButton">{{sendContactUs}}</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12 col-xs-12"  data-aos="flip-right" data-aos-duration="1000">
+            <div class="footerItemHolder lastItem">
+                <div class="footerTitle">
+                <h3>{{fastLinks}}</h3>
+              </div>
+              <div class="FastLinksHolder">
+                <a class="linkHolder" href="#">{{LinkOne}}</a>
+                <a class="linkHolder" href="#">{{LinkTwo}}</a>
+                <a class="linkHolder" href="#">{{LinkThree}}</a>
+                <a class="linkHolder" href="#">{{LinkFour}}</a>
+                <a class="linkHolder" href="#">{{LinkFive}}</a>
+              </div>
+            </div>
+          </div>
+    </div>
+</div>
+
+<app-footer></app-footer>
+
+
+

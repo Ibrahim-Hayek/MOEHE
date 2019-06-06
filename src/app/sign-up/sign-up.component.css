@@ -1,0 +1,187 @@
+.signUPStepperHolder {
+    padding-top: 50px;
+}
+
+:ng-deep  .mat-form-field {
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding: 0 20px;
+}
+.mat-form-field {
+    width: 100% !important;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding: 0 20px;
+}
+span.mat-select-value-text span {
+    font-family: Droid-Arabic-Kufi;
+}
+.mat-form-field-label, .mat-form-field {
+    font-family: Droid-Arabic-Kufi !important;
+}
+.mat-select-value-text span {
+    font-family: Droid-Arabic-Kufi;
+}
+ 
+.mat-form-field-appearance-legacy.mat-form-field-can-float.mat-form-field-should-float .mat-form-field-label {
+    font-size: 18px;
+    color: #348498;
+}
+ 
+.mat-form-field-infix {
+    padding-top: 10px !important;
+ }
+
+ ::ng-deep .mat-step-label {
+    font-family: Droid-Arabic-Kufi;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+
+
+form.educationSingleFormHolder {
+    margin-top: 12px;
+}
+
+::ng-deep body .ui-fileupload .ui-fileupload-buttonbar {
+    background: transparent;
+    border: 0;
+}
+
+::ng-deep body .ui-fileupload .ui-fileupload-content {height: 55px;border: 0;border-bottom: 1px solid #949494;border-radius: 0;margin-left: 20px;margin-right: 20px;}
+
+::ng-deep .ui-fileupload-buttonbar.ui-widget-header.ui-corner-top {position: absolute;z-index: 999;right: 13px;}
+
+p-button {
+    display: none;
+}
+
+::ng-deep body .ui-fileupload .ui-progressbar {
+    display: none;
+}
+
+::ng-deep .ui-fileupload-row {
+    display: block;
+    margin-top: 0;
+    padding-right: 100px;
+}
+
+::ng-deep span.ui-fileupload-choose.ui-button {
+    background-color: #ff502f;
+    border: 1px solid #ff502f;
+    border-radius: 10px;
+}
+
+::ng-deep body .ui-fileupload-choose:not(.ui-state-disabled):hover {
+    background-color: #ea2c09;
+    border: 1px solid #ea2c09;
+}
+
+
+::ng-deep body .ui-button { background-color: #ff502f;
+      border: 1px solid #ff502f;
+      border-radius: 10px;}
+
+
+      ::ng-deep body .ui-button:enabled:hover {
+    background-color: #ec2e0a;
+    border: 1px solid #ec2e0a;
+}
+
+::ng-deep .ui-fileupload-row>div {
+    padding: 0 10px;
+}
+
+::ng-deep button.ui-button.ui-widget.ui-state-default.ui-corner-all.ui-button-icon-only {
+    position: absolute;
+    left: 0;
+    bottom: 6px;
+}
+
+::ng-deep .ui-fileupload.ui-widget {
+    margin-bottom: 70px;
+}
+button.addinputs.MOEButton {
+    float: left;
+    margin-left: 35px;
+    margin-top: 10px;
+    padding: 8px 16px;
+}
+
+button.MOEButton {
+    font-family: Droid-Arabic-Kufi;
+}
+::ng-deep  button.ui-button.ui-widget.ui-state-default.ui-corner-all.ui-button-text-icon-left {
+    display: none;
+}
+button.MOEButton.whiteInverse.FormBack {
+    background: white;
+    color: #ff502f;
+    border: 1px solid #ff502f;
+}
+
+button.MOEButton.whiteInverse.FormBack:hover {
+    color: white;
+    background: #ff502f;
+}
+
+.FormNextBackHolder button {
+    margin-left: 15px;
+    padding: 8px 16px;
+}
+::ng-deep .mat-horizontal-content-container, .mat-horizontal-content-container {
+    overflow: visible !important;
+}
+
+ 
+
+::ng-deep  body .ui-multiselect {
+    width: calc(100% - 40px);
+    margin: 0 20px;}
+
+::ng-deep  .ui-multiselect .ui-multiselect-panel {direction: rtl;}
+
+::ng-deep  li.ui-multiselect-item.ui-corner-all {
+    direction: rtl;
+    text-align: right;
+    border-bottom: 1px solid #bfbfbf !important;
+}
+
+::ng-deep  .ui-multiselect-panel .ui-multiselect-item span {
+    padding: 0 12px;
+    font-weight: bold;
+}
+
+::ng-deep  body .ui-multiselect-panel .ui-multiselect-header .ui-multiselect-filter-container .ui-inputtext {
+    width: 100% !important;
+}
+
+::ng-deep  body .ui-multiselect-panel .ui-multiselect-header .ui-multiselect-filter-container {
+    width: calc(100% - 50px);
+    left: 13px;
+}
+
+::ng-deep  body .ui-multiselect-panel .ui-multiselect-header .ui-chkbox {margin-left: 22px;}
+
+::ng-deep  body .ui-multiselect-panel .ui-multiselect-header .ui-multiselect-close {
+    left: 0;right:auto
+}
+
+::ng-deep  body .ui-chkbox .ui-chkbox-box .ui-chkbox-icon {
+    right: -12px;
+}
+
+::ng-deep body .ui-multiselect-panel .ui-multiselect-items .ui-multiselect-item.ui-state-highlight {
+    background-color: #348498;
+}
+
+::ng-deep body .ui-chkbox .ui-chkbox-box.ui-state-active {
+    background-color: #ff502f;
+}
+p.selectedCategories {
+    font-family: Droid-Arabic-Kufi;
+    margin-top: 4px;
+}

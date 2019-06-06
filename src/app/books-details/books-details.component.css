@@ -1,0 +1,362 @@
+.breadCrumb {
+    padding: 20px 70px 40px;
+    color: #000000;
+    font-size: 15px;
+    line-height: 28px;
+}
+ 
+
+h3.BookTitle {
+    color: #000000;
+    font-size: 40px;
+    line-height: 50px;
+    margin-top: 0;
+}
+
+p.Auther {
+    color: #9B9B9B;
+    font-size: 22px;
+    line-height: 20px;
+}
+
+p.category {
+    color: #4A4A4A;
+    font-size: 22px;
+    line-height: 49px;
+    margin-bottom: -6px;
+}
+
+.categoryType {
+    border: 1px solid #979797;
+    border-radius: 20px;
+    background-color: #939393;
+    width: fit-content;
+    padding: 5px 25px;
+    color: #FFFFFF;
+    font-size: 13px;
+    line-height: 25px;
+}
+
+h5.descriptionTitle {
+    margin-bottom: 0;
+    margin-top: 28px;
+    color: #4A4A4A;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 34px;
+}
+
+p.descriptionText {
+    color: #4A4A4A;
+    font-size: 18px;
+    line-height: 34px;
+}
+.imageHolder IMG {
+    height: 368PX;
+    width: 100%;
+    object-fit: cover;
+}
+
+.imageHolder {
+    overflow: hidden;
+}
+
+.bookDetailsRateHolder {
+    border: 1px solid #979797;
+    padding: 28px;
+    margin-left: 18px;
+}
+
+h3.rateTitle {
+    margin-top: 0;
+    color: #4A4A4A;
+    font-size: 22px;
+}
+
+  .br-unit {
+    width: 25px !important;
+}
+
+   .br-unit.br-selected:after {color: #6C6C6C !important;}
+
+  .br-unit:after {
+    font-size: 30px;
+}
+
+
+.br.br-default {
+    width: fit-content !important;
+    display: inline-block;
+}
+
+h5.NbrOfReads {
+    display: inline-block;
+    color: #004D61;
+    font-size: 18px;
+    line-height: 44px;
+    margin: 0 10px 0 0;
+}
+
+button.addYourRate {
+    border-radius: 8px;
+    background-color: #004D61;
+    display: block;
+    border: 1px solid #004d61;
+    width: 100%;
+    color: white;
+    padding: 12px;
+    margin-top: 18px;
+    margin-bottom: 20px;
+}
+
+button.ShareTheBook {
+    border: 1px solid #004D61;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    color: #004d61;
+    display: block;
+    width: 100%;
+    padding: 11px;
+}
+
+button.ShareTheBook:hover {background-color: #457480;color: white;}
+
+button.addYourRate:hover {
+    background-color: #457480;
+}
+:ng-deep .br-unit {
+    width: 25px !important;
+}
+
+:ng-deep  .br-unit.br-selected:after {color: #6C6C6C !important;}
+
+:ng-deep .br-unit:after {
+    font-size: 30px;
+}
+
+  .br-unit {
+    width: 25px !important;
+}
+
+   .br-unit.br-selected:after {color: #6C6C6C !important;}
+
+  .br-unit:after {
+    font-size: 30px;
+}
+.booksDetailsTopSection {
+    border-bottom: 1px solid #E4E4E4;
+    padding-bottom: 60px;
+}
+.slide.slick-slide {	border: 1px solid #979797;margin: 0 22px;}
+
+
+h4.booksCopies {
+    color: #4A4A4A;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 56px;
+    margin: 22px;
+}
+.slide.slick-slide {}
+
+.booksCopiesHolder .slide.slick-slide {
+    padding: 15px;
+}
+
+p.slideName {
+    color: #4A4A4A;
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 0;
+}
+
+p.BarcodeText {
+    color: #9B9B9B;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 0;
+}
+
+p.BarcodeText {
+    /* opacity: 0.61; */
+    /* color: #000000; */
+    /* font-family: ".SF NS Display"; */
+    /* font-size: 20px; */
+    /* line-height: 23px; */
+}
+
+p.slideBarcode {
+    color: #000000;
+    font-family: ".SF NS Display";
+    font-size: 20px;
+}
+
+p.slideBarcode {}
+
+p.CopyStatusText {
+    color: #9B9B9B;
+    font-size: 18px;
+    line-height: 20px;
+    margin-top: 15px;
+}
+
+p.AvailableBook {
+    color: #09B000;
+    font-size: 18px;
+    line-height: 15px;
+}
+
+p.NotAvailableBook {
+    color: #F34A44;
+    font-size: 18px;
+    line-height: 15px;
+}
+
+p.LocationInLibrary {
+    color: #9B9B9B;
+    font-size: 18px;
+    line-height: 33px;
+    margin-bottom: 0;
+}
+
+p.slidelocation {
+    color: #000000;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+button.MOEButton.ReserveBookButton {
+    width: 100%;
+    margin-top: 15px;
+    padding: 9px;
+}
+.booksCopiesHolder {
+    padding-bottom: 22px;
+    border: 1px solid #E4E4E4;
+}
+.AdditionalBookInfo {
+    padding: 26px;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+h3.AdditionalTitle {
+    margin-top: 0;
+    color: #4A4A4A;
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+p.AdditionalItem {
+    color: #4A4A4A;
+    font-size: 20px;
+    line-height: 36px;
+    margin-bottom: 0;
+}
+.CommentsComponent {
+    padding: 26px 0;
+}
+
+h3.commentsTitle {
+    margin: 0;
+    color: #4A4A4A;
+    font-size: 30px;
+    line-height: 56px;
+    margin-bottom: 8px;
+}
+
+input[type="text"] {}
+
+.AddCommentHolder input {
+    border: 1px solid #979797;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    width: 100%;
+    color: #9b9b9b;
+    font-size: 20px;
+    line-height: 38px;
+    padding: 10px 15px;
+    padding-left: 130px;
+}
+
+ .AddCommentHolder input::placeholder{color:#9B9B9B !important}
+
+
+.AddCommentHolder {
+    position: relative;
+    margin-bottom: 45px;
+}
+
+button.MOEButton {}
+
+.AddCommentHolder button.MOEButton {
+    position: absolute;
+    left: 0;
+    height: 100%;
+}
+
+p.CommentsTotal {
+    color: #4A4A4A;
+    font-size: 23px;
+    line-height: 27px;
+    float: right;
+}
+
+.commentsItemsHolder {
+    clear: both;
+    border-top: 1px solid #979797;
+}
+
+p.viewAllComments {
+    float: left;
+    color: #4173C3;
+    font-size: 16px;
+    line-height: 31px;
+    text-decoration: underline;
+}
+
+.commentItem {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #979797;
+}
+
+.commentItem img {
+    display: inline-block;
+    vertical-align: top;
+}
+
+ 
+
+.commentItem .commentText {
+    display: inline-block;
+    padding-right: 16px;
+}
+
+.commentText label {
+    color: #000000;
+    font-size: 23px;
+    font-weight: lighter;
+    margin-bottom: 0;
+}
+
+.commentText p {
+    color: #000000;
+    font-size: 18px;
+    margin-bottom: 14px;
+}
+
+.commentText span {
+    color: #9B9B9B;
+    font-size: 16px;
+    line-height: 18px;
+}
+p.viewAllComments:hover {
+    cursor: pointer;
+    color: #ff502f;
+}
+ 
+
+.booksCopiesHolder .slide.slick-slide:hover {
+    background: #f3f3f3;
+}

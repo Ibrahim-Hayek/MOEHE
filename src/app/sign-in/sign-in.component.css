@@ -1,0 +1,99 @@
+.loginBox {
+    width: 100%;
+    max-width: 625px;
+    border: 1px solid #979797;
+    background-color: #FFFFFF;
+    padding: 18px 40px 5px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.loginBox > h3 {
+    color: #348498;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 68px;
+    margin-top: 0;
+}
+
+.loginFormHolder {
+    padding-top: 100px;
+}
+
+.loginBox label {
+    color: #000000;
+    font-size: 22px;
+    line-height: 42px;
+    display: block;
+    margin-top: 13px;
+    margin-bottom: 6px;
+    font-weight: 300;
+}
+
+input.MOEInput {
+    border: 1px solid #979797;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    height: 50px;
+    width: 100%;
+    padding: 0 12px;
+    font-size: 18px;
+}
+
+p.forgetpasswordLink {
+    color: #348498;
+    font-size: 20px;
+    line-height: 38px;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+button.MOEButton.loginButton {
+    float: left;
+    margin-top: 22px;
+    color: #FFFFFF;
+    font-size: 20px;
+    line-height: 29px;
+}
+
+.loginBox h3.otherLoginTitle {
+    color: #000000;
+    font-size: 24px;
+    line-height: 46px;
+    text-align: center;
+    margin-top: 16px;
+    font-weight: 300;
+}
+
+.loginBox img {
+    width: 48px;
+    margin-left: 40px;
+    margin-top: 15px;
+    margin-bottom: 33px;
+}
+
+.dontHaveAcountHolder {
+    margin-left: -40px;
+    margin-right: -40px;
+    border-top: 1px solid #979797;
+    padding: 15px 40px 0;
+}
+
+.dontHaveAcountHolder p {
+    color: #000000;
+    font-size: 20px;
+    line-height: 38px;
+    display: inline-block;
+}
+
+.dontHaveAcountHolder p.signupLink {
+    color: #348498;
+    font-size: 20px;
+    line-height: 28px;
+    margin: 0 12px;
+    border-bottom: 1px solid;
+}
+.loginBox img , p.signupLink, p.forgetpasswordLink {
+    cursor: pointer;
+}

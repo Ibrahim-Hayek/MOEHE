@@ -1,0 +1,117 @@
+<app-header ></app-header>
+
+<div class="breadCrumb">
+    الرئيسية > ثقافة عامة > الفئة العمرية 10-14 سنة > عنوان الكتاب
+</div>
+
+<div class="booksDetailsTopSection">
+    <div class="col-md-9 col-sm-12 col-xs-12">
+      <div class="col-md-4 col-sm-4 col-xs-12">
+        <div class="imageHolder">
+          <img src="../../assets/images/b1.jpg"/>
+        </div>
+      </div>
+      <div class="col-md-8 col-sm-8 col-xs-12">
+          <div class="BookDetailsContent">
+            <h3 class="BookTitle">{{BookTitle}}</h3>
+            <p class="Auther">{{Auther}}</p>
+            <p class="category">{{category}}</p>
+            <div class="categoryType">{{SelectedCategory}}</div>
+            <h5 class="descriptionTitle">{{descriptionTitle}}</h5>
+            <p class="descriptionText">{{descriptionText}}</p>
+          </div>
+        </div>
+    </div>
+      <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="bookDetailsRateHolder">
+        <h3 class="rateTitle">{{rateTitle}}</h3>
+          <bar-rating [readOnly]="true" [(rate)]="rate" [max]="5"></bar-rating>
+          <h5 class="NbrOfReads">{{NumberOfReads}}{{NumberOfReadsText}}</h5>
+        <div class="RateButtonsHolder">
+          <button class="addYourRate" (click)="showDialog()">{{addYourRate}}</button>
+          <button class="ShareTheBook">{{ShareTheBook}}</button>
+        </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+</div>
+
+<div class="booksCopiesHolder">
+<div class="container">
+    <h4 class="booksCopies">{{booksCopies}}</h4>
+
+ <ngx-slick-carousel class="carousel" 
+                    #slickModal="slick-carousel" 
+                    [config]="slideConfig" 
+                    (init)="slickInit($event)"
+                    (breakpoint)="breakpoint($event)"
+                    (afterChange)="afterChange($event)"
+                    (beforeChange)="beforeChange($event)">
+        <div ngxSlickItem *ngFor="let slide of BooksCopiesArray" class="slide">
+          <p class="slideName">{{slide.name}}</p>
+          <p class="BarcodeText">{{BarcodeText}}</p>
+          <p  class="slideBarcode">{{slide.barcode}}</p>
+          <p class="CopyStatusText ">{{CopyStatusText}}</p>
+          <p class="AvailableBook" *ngIf="slide.available == true">{{AvailableBook}}</p>
+          <p class="NotAvailableBook" *ngIf="slide.available == false">{{NotAvailableBook}} {{slide.returnDate}}</p>
+          <p class="LocationInLibrary">{{LocationInLibrary}}</p>
+          <p class="slidelocation">{{slide.location}}</p>
+          <button class="MOEButton ReserveBookButton">{{ReserveBook}}</button>
+        </div>
+    </ngx-slick-carousel>
+  </div>
+</div>
+
+<div class="AdditionalBookInfo">
+  <div class="container">
+    <h3 class="AdditionalTitle">{{AdditionalTitle}}</h3>
+    <p class="AdditionalItem">{{AdditionalOne}}: <label>123456</label></p>
+    <p class="AdditionalItem">{{AdditionalTwo}}: <label>154893</label></p>
+    <p class="AdditionalItem">{{AdditionalThree}}: <label>335974</label></p>
+    <p class="AdditionalItem">{{AdditionalFour}}: <label>13-8-2014</label></p>
+  </div>
+</div>
+
+<div class="CommentsComponent">
+  <div class="container">
+    <h3 class="commentsTitle">{{commentsTitle}}</h3>
+    <div class="AddCommentHolder">
+      <input type="text" placeholder="{{AddcommentInput}}" />
+      <button class="MOEButton">{{AddcommentInput}}</button>
+    </div>
+
+
+<div class="commentsView">
+  <p class="CommentsTotal">{{CommentsTotalText}}  ({{CommentsTotal}})</p>
+  <p class="viewAllComments">{{viewAllComments}}</p>
+</div>
+</div>
+<div class="commentsView">
+<div class="commentsItemsHolder">
+    <div class="commentItem" *ngFor="let comment of CommentsArray">
+        <div class="container">
+
+      <img src="{{comment.profileImageUrl}}" />
+      <div class="commentText">
+        <label>{{comment.name}}</label>
+        <p>{{comment.text}}</p>
+        <span>{{comment.date}}</span>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+
+
+
+</div>
+
+<p-dialog header="تقييم الكتاب" [(visible)]="display" [modal]="true" [responsive]="true" [style]="{width: '350px', minWidth: '200px'}" [minY]="70" 
+        [maximizable]="true" [baseZIndex]="10000">
+        <bar-rating  [(rate)]="newRate" [max]="5"></bar-rating>
+
+        <p-footer>
+            <button type="button" pButton icon="pi pi-check" (click)="display=false" label="تقديم"></button>
+            <button type="button" pButton icon="pi pi-close" (click)="display=false" label="إلغاء" class="ui-button-secondary"></button>
+        </p-footer>
+</p-dialog>

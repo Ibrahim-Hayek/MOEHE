@@ -1,0 +1,74 @@
+[
+    {
+        "id" : "1",
+        "name" : "الكتاب الأول",
+        "author" : "اسم المؤلف الأول",
+        "link" : "www.google.com",
+        "imageUrl" : "../assets/images/b5.png",
+        "rate":10
+    },
+    {
+        "id" : "2",
+        "name" : "الكتاب الثاني",
+        "author" : "اسم المؤلف الثاني",
+        "link" : "www.google.com",
+        "imageUrl" : "../assets/images/b4.jpg",
+        "rate":5
+    },
+    {
+        "id" : "3",
+        "name" : "الكتاب الثالث",
+        "author" : "اسم المؤلف الثالث",
+        "link" : "www.google.com",
+        "imageUrl" : "../assets/images/b1.jpg",
+        "rate":2
+    },
+    {
+        "id" : "4",
+        "name" : "الكتاب الرابع",
+        "author" : "اسم المؤلف الرابع",
+        "link" : "www.google.com",
+        "imageUrl" : "../assets/images/b2.jpg",
+        "rate":8
+    },
+    {
+        "id" : "5",
+        "name" : "الكتاب الخامس",
+        "author" : "اسم المؤلف الخامس",
+        "link" : "www.google.com",
+        "imageUrl" : "../assets/images/b4.jpg",
+        "rate":9
+    },
+    {
+        "id" : "6",
+        "name" : "الكتاب السادس",
+        "author" : "اسم المؤلف السادس",
+        "link" : "www.google.com",
+        "imageUrl" : "../assets/images/b4.jpg",
+        "rate":7
+    },
+    {
+        "id" : "7",
+        "name" : "الكتاب السابع",
+        "author" : "اسم المؤلف السابع",
+        "link" : "www.google.com",
+        "imageUrl" : "../assets/images/b5.png",
+        "rate":6
+    },
+    {
+        "id" : "8",
+        "name" : "الكتاب الثامن",
+        "author" : "اسم المؤلف الثامن",
+        "link" : "www.google.com",
+        "imageUrl" : "../assets/images/b6.png",
+        "rate":7
+    },
+    {
+        "id" : "9",
+        "name" : "الكتاب التاسع",
+        "author" : "اسم المؤلف التاسع",
+        "link" : "www.google.com",
+        "imageUrl" : "../assets/images/b11.png",
+        "rate":7
+    }
+]

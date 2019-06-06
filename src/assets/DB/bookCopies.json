@@ -1,0 +1,51 @@
+[
+    {
+        "id" : "1",
+        "name" : "النسخة الأولى",
+        "barcode" : "5849987563",
+        "available" : true,
+        "location" : "الطابق 1 - القسم AA"
+    },
+    {
+        "id" : "1",
+        "name" : "النسخة الخامسة",
+        "barcode" : "1112384964",
+        "available" : false,
+        "returnDate" : "18-04-2020",
+        "location" : "الطابق 3 - القسم C"
+    },
+    {
+        "id" : "1",
+        "name" : "النسخة السادسة",
+        "barcode" : "6494664754",
+        "available" : false,
+        "returnDate" : "19-02-2019",
+        "location" : "الطابق 14 - القسم BB"
+    },
+    {
+        "id" : "2",
+        "name" : "النسخة الثانية",
+        "barcode" : "6498573699",
+        "available" : false,
+        "returnDate" : "30-10-2019",
+        "location" : "الطابق 12 - القسم AB"
+    },
+    {
+        "id" : "1",
+        "name" : "النسخة الثالثة",
+        "barcode" : "844125669",
+        "available" : true,
+        "returnDate" : "30-10-2018",
+        "location" : "الطابق 8 - القسم MH"
+    },
+    {
+        "id" : "1",
+        "name" : "النسخة الرابعة",
+        "barcode" : "2425977645",
+        "available" : true,
+        "returnDate" : "30-10-2018",
+        "location" : "الطابق 4 - القسم ZE"
+    }
+   
+]
+

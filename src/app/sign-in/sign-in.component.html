@@ -1,0 +1,29 @@
+<app-header></app-header>
+<div class="loginFormHolder">
+  <div class="loginBox">
+    <h3>{{LoginText}}</h3>
+
+    <label for="Username">{{UsernameLabel}}</label>
+    <input #Username class="MOEInput" type="text"/>
+
+    
+    <label for="Password">{{PasswordLabel}}</label>
+    <input #Password class="MOEInput" type="password" />
+
+    <p class="forgetpasswordLink">{{forgetPasswordLink}}</p>
+    <button (click)="login()"   class="MOEButton loginButton">{{signInButton}}</button>
+
+    <h3 class="otherLoginTitle">{{otherLoginTitle}}</h3>
+    <div class="otherSignin">
+    <img src="../../assets/images/twitter.png"/>
+    <img src="../../assets/images/gmail.png"/>
+    <img src="../../assets/images/facebook.png"/>
+  </div>
+    <div class="dontHaveAcountHolder">
+      <p>{{dontHaveAcountText}}</p>
+      <p (click)="goToSignUp()" class="signupLink">{{signupNow}}</p>
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>

@@ -20,3 +20,4 @@
 //     this.carousel.pause();
 //   }
 // }
+ 

@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import {book} from '../models/book.model'
-import { bloomHasToken } from '@angular/core/src/render3/di';
+// import { bloomHasToken } from '@angular/core/src/render3/di';
 import {ConfigService} from '../Http.service'
 import {category} from '../models/category.model.'
 import {news} from '../models/news.model'
@@ -16,7 +16,7 @@ import { Router } from '@angular/router';
 
 export class HomepageComponent implements OnInit {
 
-  @ViewChild('carousel') carousel: any;
+  @ViewChild('carousel',null) carousel: any;
 
   constructor( private ConfigService: ConfigService, config: NgbCarouselConfig,private router: Router) { 
     config.interval = 5000;

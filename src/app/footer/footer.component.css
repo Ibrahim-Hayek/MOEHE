@@ -6,4 +6,13 @@
     font-size: 20px;
     line-height: 26px;
     padding-top: 24px;
+ 
+}
+
+::ng-deep button.navbar-toggle {
+    background: #ddd !important;
+}
+::ng-deep button.navbar-toggle:hover
+ {
+    background: #f1f1f1 !important;
 }

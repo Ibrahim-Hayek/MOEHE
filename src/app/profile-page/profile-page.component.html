@@ -1,0 +1,31 @@
+<app-header></app-header>
+
+<div class="profileTopHolder">
+  <div class="container">
+  <img src="../../assets/images/profilePic.jpg"/>
+  <div class="profileTopContent">
+    <h3>{{profileName}}</h3>
+    <p>{{profileDate}}</p>
+    <button class="MOEButton">{{editProfileButton}}</button>
+  </div>
+</div>
+</div>
+
+<div class="panelHolder">
+
+  <p-tabView>
+    <p-tabPanel header="{{personalInfo}}">
+  
+  </p-tabPanel>
+  <p-tabPanel header="{{myHold}}">
+    
+ 
+  </p-tabPanel>
+  <p-tabPanel header="{{myBorrows}}">
+  
+  </p-tabPanel>
+</p-tabView>
+</div>
+
+
+<app-footer></app-footer>

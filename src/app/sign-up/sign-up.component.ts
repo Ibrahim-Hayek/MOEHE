@@ -36,7 +36,8 @@ export class SignUpComponent implements OnInit {
   defaultLabel="إختر الفئات المفضلة";
   UserName = "اسم المستخدم"
   Password = "كلمة المرور"
-  ConfirmPassword = "تأكيد كلمة المرور "
+  ConfirmPassword = "تأكيد كلمة المرور ";
+  submitForm = "تسجيل"
   countriesList = [] ;
   categoriesArray : category[] = [];
   categoriesSelectItems = [];
@@ -81,7 +82,14 @@ export class SignUpComponent implements OnInit {
     });
   }
   
+  numberOnly(event): boolean {
+    const charCode = (event.which) ? event.which : event.keyCode;
+    if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+      return false;
+    }
+    return true;
 
+  }
 
   ngOnInit() {
     this. getCountries();

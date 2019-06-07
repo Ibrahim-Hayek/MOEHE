@@ -55,7 +55,7 @@
                 </ul>
               </li>
               <li><a href="#">{{EventsMenu}}</a></li>
-              <li *ngIf="loggedIn" class="showOnlyForMobile"><a href="#">{{ProfileLink}}</a></li>
+              <li *ngIf="loggedIn" (click)="goToProfile()" class="showOnlyForMobile"><a href="#">{{ProfileLink}}</a></li>
               <li *ngIf="loggedIn" class="showOnlyForMobile"><a href="#">{{MessagesLink}}</a></li>
               <li *ngIf="loggedIn" class="showOnlyForMobile"><a href="#">{{NotificationsLink}}</a></li>
               <li *ngIf="loggedIn" class="showOnlyForMobile" (click)="showDialog()"><a href="#">{{SearchLink}}</a></li>
@@ -69,7 +69,7 @@
         <img *ngIf="loggedIn" src="../../assets/images/notification.png"/>
         <img *ngIf="loggedIn" src="../../assets/images/message.png"/>
         <button *ngIf="!loggedIn" (click)="goToSignIn()" class="MOEButton ">{{signInButton}}</button>
-        <div *ngIf="loggedIn" class="headerProfileLink">
+        <div *ngIf="loggedIn" class="headerProfileLink" (click)="goToProfile()">
             <h3>{{LoggedInUsername}}</h3>
             <img src="../../assets/images/user.png"/>
         </div>
@@ -78,7 +78,7 @@
 
 </div>
 
-<p-dialog header="تقييم الكتاب" [(visible)]="displayAdvancedSearch" [modal]="true" [responsive]="true" [style]="{width: '350px', minWidth: '200px'}" [minY]="70" 
+<p-dialog header="بحث متقدم" [(visible)]="displayAdvancedSearch" [modal]="true" [responsive]="true" [style]="{width: '350px', minWidth: '200px'}" [minY]="70" 
         [maximizable]="true" [baseZIndex]="10000">
 
         <div class="col-md-12 col-sm-12 col-xs-12">

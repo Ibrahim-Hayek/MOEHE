@@ -182,3 +182,5 @@ li.showOnlyForMobile {
     width: 100%;
     text-align: right;
 }
+
+.navbar-default .navbar-nav > li.active > a:hover:after{bottom:-1px !important}

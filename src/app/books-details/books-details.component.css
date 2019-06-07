@@ -244,7 +244,7 @@ h3.AdditionalTitle {
     color: #4A4A4A;
     font-size: 30px;
     line-height: 40px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 p.AdditionalItem {
@@ -359,4 +359,35 @@ p.viewAllComments:hover {
 
 .booksCopiesHolder .slide.slick-slide:hover {
     background: #f3f3f3;
+}
+button.commetsSettingButton.ui-button {
+    background: transparent;
+    border: 0;
+    float: left;
+    height: 30px;
+    top: 30px;
+}
+button.commetsSettingButton.ui-button:focus {
+    outline-color: transparent !important;
+    box-shadow: 0 0 0 0 transparent;
+}
+button.commetsSettingButton.ui-button img {
+    width: 26px;
+    vertical-align: middle !important;
+}
+
+ 
+.commentItem ::ng-deep .ui-overlaypanel-content {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.commentItem ::ng-deep.ui-overlaypanel-content div {
+    padding: 5px 20px !important;
+}
+
+.commentItem ::ng-deep .ui-overlaypanel-content div:hover {
+    background: #ff502f;
+    color: white;
+    cursor:pointer
 }

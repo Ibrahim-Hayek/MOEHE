@@ -50,6 +50,11 @@ export class HeaderComponent implements OnInit {
     sessionStorage.clear();
     this.router.navigate(['SignIn']);
   }
+
+  goToProfile(){
+      this.router.navigate(['Profile']);
+  }
+  
   ngOnInit() {
     this.momentsDay = moment().lang("ar").format('dddd');
     this.momentsDate = moment().lang("ar").format('LL');

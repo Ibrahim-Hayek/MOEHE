@@ -97,6 +97,15 @@
         <p>{{comment.text}}</p>
         <span>{{comment.date}}</span>
       </div>
+      <p-overlayPanel #op>
+        <div>حفظ</div>
+        <div>مسح</div>
+        <div>مشاركة</div>
+    </p-overlayPanel>
+    
+    <button class="commetsSettingButton" type="text" pButton  (click)="op.toggle($event)">
+      <img src="../../assets/images/settings.png"/>
+    </button>
     </div>
   </div>
   </div>

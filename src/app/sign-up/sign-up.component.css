@@ -12,8 +12,7 @@
     width: 100% !important;
     margin-bottom: 15px;
     margin-top: 15px;
-    padding: 0 20px;
-}
+ }
 span.mat-select-value-text span {
     font-family: Droid-Arabic-Kufi;
 }
@@ -51,9 +50,9 @@ form.educationSingleFormHolder {
     border: 0;
 }
 
-::ng-deep body .ui-fileupload .ui-fileupload-content {height: 55px;border: 0;border-bottom: 1px solid #949494;border-radius: 0;margin-left: 20px;margin-right: 20px;}
+::ng-deep body .ui-fileupload .ui-fileupload-content {height: 55px;border: 0;border-bottom: 1px solid #949494;border-radius: 0}
 
-::ng-deep .ui-fileupload-buttonbar.ui-widget-header.ui-corner-top {position: absolute;z-index: 999;right: 13px;}
+::ng-deep .ui-fileupload-buttonbar.ui-widget-header.ui-corner-top {position: absolute;z-index: 999;right: 0px;}
 
 p-button {
     display: none;
@@ -105,19 +104,17 @@ p-button {
     margin-bottom: 70px;
 }
 button.addinputs.MOEButton {
-    float: left;
-    margin-left: 35px;
-    margin-top: 10px;
-    padding: 8px 16px;
+     margin-left: 10px;
+     padding: 8px 16px;
 }
-
+.multiButtonsHolder {
+    margin-bottom: 30px;
+    text-align: left;
+}
 button.MOEButton {
     font-family: Droid-Arabic-Kufi;
 }
-::ng-deep  button.ui-button.ui-widget.ui-state-default.ui-corner-all.ui-button-text-icon-left {
-    display: none;
-}
-button.MOEButton.whiteInverse.FormBack {
+ button.MOEButton.whiteInverse.FormBack {
     background: white;
     color: #ff502f;
     border: 1px solid #ff502f;
@@ -139,8 +136,8 @@ button.MOEButton.whiteInverse.FormBack:hover {
  
 
 ::ng-deep  body .ui-multiselect {
-    width: calc(100% - 40px);
-    margin: 0 20px;}
+    width: calc(100% );
+}
 
 ::ng-deep  .ui-multiselect .ui-multiselect-panel {direction: rtl;}
 
@@ -184,4 +181,37 @@ button.MOEButton.whiteInverse.FormBack:hover {
 p.selectedCategories {
     font-family: Droid-Arabic-Kufi;
     margin-top: 4px;
+}
+button.MOEButton.FormNext {
+    float: left;
+}
+
+.signUPStepperHolder {
+    padding-bottom: 50px;
+}
+
+button.MOEButton.whiteInverse.FormBack {
+    float: right;
+}
+
+button.MOEButton.FormNextBack {
+    float: left;
+}
+button.addinputs.MOEButton.multiButtons {
+    background: #348498;
+    border-color: #348498;
+}
+::ng-deep span.mat-option-text, ::ng-deep  span.mat-select-value-text span {
+    font-family: Droid-Arabic-Kufi;
+}
+.multiSelect {
+    margin-bottom: 40px;
+    margin-top: 21px;
+}
+
+ 
+.multiSelect ::ng-deep .ui-multiselect {
+    border: 0;
+    border-bottom: 1px solid #949494;
+    border-radius: 0;
 }

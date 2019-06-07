@@ -1,0 +1,30 @@
+@import '../homepage/homepage.component.css';
+
+.profileTopHolder img {
+    width: 200px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 36px;
+}
+
+.profileTopHolder {
+    padding: 40px 0;
+    border: 1px solid #BEBEBE;  
+    margin-bottom:20px
+}
+
+.profileTopContent {
+    display: inline-block;
+}
+
+.profileTopContent h3 {
+    color: #000000;
+    font-size: 40px;
+}
+
+.profileTopContent p {
+    color: #9B9B9B;
+    font-size: 25px;
+    margin-bottom: 24px;
+}

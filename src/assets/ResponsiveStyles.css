@@ -99,6 +99,7 @@ ul.nav.navbar-nav li a {
 @media screen and (max-width:970px) and (min-width:768px){
     .logoTitle h3 {
     font-size: 15px !important;
+    margin-top: 7px !important;
 }
 
 .logoTitle p {
@@ -107,6 +108,8 @@ ul.nav.navbar-nav li a {
 
 .logoTitle  img {
     width: 35px  !important;
+    margin-top: 7px !important;
+
 }
 
 .logoTitle {
@@ -198,6 +201,10 @@ ul.nav.navbar-nav li a {
         }
 
 @media screen and (max-width:767px){
+    .BookDetailsContent h3.BookTitle {
+        margin-top: 16px;
+    }
+    .breadCrumb{padding:20px 30px 40px !important}
     button.slick-prev.slick-arrow {
         left: -8px;
     }
@@ -333,3 +340,14 @@ button.MOEButton.loginButton {
     padding: 12px !important;
 }
 }
+@media screen and (min-width:769px){
+    .BannerSearchHolder  input#SearhBannerInput {
+        width:45%
+    }
+}
+
+@media screen and (min-width:768px) and (max-width: 991px){
+    .HomePageBookItem img{min-height: 330px !important}
+}
+
+ 

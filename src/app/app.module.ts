@@ -26,6 +26,8 @@ import {MultiSelectModule} from 'primeng/multiselect';
 import { BarRatingModule } from "ngx-bar-rating";
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import {DialogModule} from 'primeng/dialog';
+import {OverlayPanelModule} from 'primeng/overlaypanel';
+import {TooltipModule} from 'primeng/tooltip';
 
 import { HeaderComponent } from './header/header.component';
 import { HomepageComponent } from './homepage/homepage.component';
@@ -33,6 +35,7 @@ import { FooterComponent } from './footer/footer.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { BooksDetailsComponent } from './books-details/books-details.component';
+import { ProfilePageComponent } from './profile-page/profile-page.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +45,8 @@ import { BooksDetailsComponent } from './books-details/books-details.component';
     FooterComponent,
     SignInComponent,
     SignUpComponent,
-    BooksDetailsComponent
+    BooksDetailsComponent,
+    ProfilePageComponent
   ],
   imports: [
     BrowserModule,
@@ -70,7 +74,8 @@ import { BooksDetailsComponent } from './books-details/books-details.component';
     BarRatingModule,
     SlickCarouselModule,
     DialogModule,
-    
+    OverlayPanelModule,
+    TooltipModule
     ],
   providers: [ConfigService,MatDatepickerModule],
   bootstrap: [AppComponent]

@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class FooterComponent implements OnInit {
 
   constructor() { }
-  footerGreenText= "Footer Area"
+  footerGreenText= "حقوق النشر والطبع محفوظة"
   ngOnInit() {
   }
 

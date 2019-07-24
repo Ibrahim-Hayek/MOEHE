@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import {book} from '../models/book.model'
 // import { bloomHasToken } from '@angular/core/src/render3/di';
-import {ConfigService} from '../Http.service'
+import {ConfigService} from '../http.service'
 import {category} from '../models/category.model.'
 import {news} from '../models/news.model'
 import {NgbCarouselConfig} from '@ng-bootstrap/ng-bootstrap';
@@ -31,28 +31,28 @@ export class HomepageComponent implements OnInit {
   selectedCategory = "كل الفئات";
   booknameSearchPlaceHolder = "عنوان الكتاب";
   ReadBooksTitle = "تصفح الكتب";
-  newArrival = "وصل حديثاً"
-  mostRated = "الأكثر تقييماً"
-  booksCategories  = [  "كل الفئات" ,"فلسفة" , "علوم" ,"تاريخ" ,"قصص"]
-  BookDetails= "تفاصيل الكتاب"
+  newArrival = "وصل حديثاً";
+  mostRated = "الأكثر تقييماً";
+  booksCategories  = [  "كل الفئات" ,"فلسفة" , "علوم" ,"تاريخ" ,"قصص"];
+  BookDetails= "تفاصيل الكتاب";
   BorrowBook = "إحجز الكتاب";
   ReadMoreBooks = "تصفح المزيد";
   BooksCategoriesCompTitle = "فئات الكتب";
   NewsComponentTitle = "الإعلانات";
   libraryTime = "توقيت المكتبة"
-  contactUs = "راسلنا"
+  contactUs = "راسلنا";
   fastLinks = "روابط سريعة";
-  fromToDays= "من الأحد إلى الخميس"
+  fromToDays= "من الأحد إلى الخميس";
   fromToHours = "من ٧ صباحاً إلى ٢ مساءً";
-  sendContactUs = "أرسل" 
-  LinkOne = "الرابط 1"
-  LinkTwo = "الرابط 2"
-  LinkThree = "الرابط 3"
-  LinkFour = "الرابط 4"
-  LinkFive = "الرابط 5"
-  sendYourText = "أرسل مقترحك"
-  twittes="التغريدات"
-  MediaCenterComponentTitle = "المركز الإعلامي"
+  sendContactUs = "أرسل" ;
+  LinkOne = "الرابط 1";
+  LinkTwo = "الرابط 2";
+  LinkThree = "الرابط 3";
+  LinkFour = "الرابط 4";
+  LinkFive = "الرابط 5";
+  sendYourText = "أرسل مقترحك";
+  twittes="التغريدات";
+  MediaCenterComponentTitle = "المركز الإعلامي";
   BooksArray : book[] = [];
   BooksFirstFour: book[] = [];
   sortedBooksByRate: book[] = [];
@@ -61,7 +61,7 @@ export class HomepageComponent implements OnInit {
   newsList: news[] = [];
   tweetsList: news[] = [];
   loggedIn: boolean = false;
-  ChosenForYou = "إخترنا لكم"
+  ChosenForYou = "إخترنا لكم";
 
   getBooks() {
     this.ConfigService.getBooks()

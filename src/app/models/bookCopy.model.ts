@@ -3,5 +3,5 @@ export interface bookCopy {
     name : string,
     barcode : string,
     available : boolean,
-    location : string
+    location : string,
   }

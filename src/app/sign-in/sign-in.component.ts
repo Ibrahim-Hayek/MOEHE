@@ -10,13 +10,13 @@ export class SignInComponent implements OnInit {
 
   constructor(private router: Router) { }
 
-  LoginText = "تسجيل الدخول"
-  UsernameLabel = "إسم المستخدم"
-  PasswordLabel = "كلمة المرور"
-  forgetPasswordLink = "نسيت كلمة المرور؟"
-  signInButton = "تسجيل الدخول"
-  otherLoginTitle = "أو سجل عبر"
-  dontHaveAcountText = "ليس لديك حساب؟" 
+  LoginText = "تسجيل الدخول";
+  UsernameLabel = "إسم المستخدم";
+  PasswordLabel = "كلمة المرور";
+  forgetPasswordLink = "نسيت كلمة المرور؟";
+  signInButton = "تسجيل الدخول";
+  otherLoginTitle = "أو سجل عبر";
+  dontHaveAcountText = "ليس لديك حساب؟";
   signupNow = "سجل الان";
 
   login(){

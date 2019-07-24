@@ -3,5 +3,5 @@
     name : string,
     profileImageUrl : string,
     text : boolean,
-    date : string
+    date : string,
   }

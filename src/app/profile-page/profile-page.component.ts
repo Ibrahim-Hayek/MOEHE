@@ -9,9 +9,9 @@ export class ProfilePageComponent implements OnInit {
   profileName = "كميل أبي خليل";
   profileDate = "25/02/2019";
   editProfileButton =  "تعديل الملف";
-  personalInfo = "معلوماتي الشخصية"
-  myHold = "حجوزاتي"
-  myBorrows = "استعاراتي"  
+  personalInfo = "معلوماتي الشخصية";
+  myHold = "حجوزاتي";
+  myBorrows = "استعاراتي";
   constructor() { }
 
   ngOnInit() {

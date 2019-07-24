@@ -1,34 +1,32 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
- import { NgSelectModule } from '@ng-select/ng-select';
+import { NgSelectModule } from '@ng-select/ng-select';
 import { FormsModule } from '@angular/forms';
-import {TabViewModule} from 'primeng/tabview';
-import {HttpClientModule} from '@angular/common/http';
-import {ConfigService} from './http.service'
-import {GalleriaModule} from 'primeng/galleria';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
-import {NgbPaginationModule, NgbAlertModule} from '@ng-bootstrap/ng-bootstrap';
-import {MatStepperModule} from '@angular/material/stepper';
-import {  ReactiveFormsModule } from '@angular/forms';
+import { TabViewModule } from 'primeng/tabview';
+import { HttpClientModule } from '@angular/common/http';
+import { ConfigService } from './http.service';
+import { GalleriaModule } from 'primeng/galleria';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbPaginationModule, NgbAlertModule } from '@ng-bootstrap/ng-bootstrap';
+import { MatStepperModule } from '@angular/material/stepper';
+import { ReactiveFormsModule } from '@angular/forms';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-import {MatDatepickerModule} from '@angular/material/datepicker';
-import {MatSelectModule} from '@angular/material/select';
-import {FileUploadModule} from 'primeng/fileupload';
-import {DragDropModule} from 'primeng/dragdrop';
-import {MultiSelectModule} from 'primeng/multiselect';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatSelectModule } from '@angular/material/select';
+import { FileUploadModule } from 'primeng/fileupload';
+import { DragDropModule } from 'primeng/dragdrop';
+import { MultiSelectModule } from 'primeng/multiselect';
 import { BarRatingModule } from "ngx-bar-rating";
 import { SlickCarouselModule } from 'ngx-slick-carousel';
-import {DialogModule} from 'primeng/dialog';
-import {OverlayPanelModule} from 'primeng/overlaypanel';
-import {TooltipModule} from 'primeng/tooltip';
-
+import { DialogModule } from 'primeng/dialog';
+import { OverlayPanelModule } from 'primeng/overlaypanel';
+import { TooltipModule } from 'primeng/tooltip';
 import { HeaderComponent } from './header/header.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { FooterComponent } from './footer/footer.component';
@@ -36,7 +34,6 @@ import { SignInComponent } from './sign-in/sign-in.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { BooksDetailsComponent } from './books-details/books-details.component';
 import { ProfilePageComponent } from './profile-page/profile-page.component';
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -53,7 +50,7 @@ import { ProfilePageComponent } from './profile-page/profile-page.component';
     BrowserAnimationsModule,
     AppRoutingModule,
     AngularFontAwesomeModule,
-     NgSelectModule,
+    NgSelectModule,
     FormsModule,
     TabViewModule,
     HttpClientModule,
@@ -63,10 +60,10 @@ import { ProfilePageComponent } from './profile-page/profile-page.component';
     NgbAlertModule,
     MatStepperModule,
     ReactiveFormsModule,
-    MatFormFieldModule  ,
+    MatFormFieldModule,
     MatInputModule,
     MatDatepickerModule,
-    MatNativeDateModule ,
+    MatNativeDateModule,
     MatSelectModule,
     FileUploadModule,
     DragDropModule,
@@ -76,8 +73,9 @@ import { ProfilePageComponent } from './profile-page/profile-page.component';
     DialogModule,
     OverlayPanelModule,
     TooltipModule
-    ],
-  providers: [ConfigService,MatDatepickerModule],
+  ],
+  providers: [ConfigService, MatDatepickerModule],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

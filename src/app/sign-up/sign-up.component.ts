@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
-import {ConfigService} from '../Http.service'
+import {ConfigService} from '../http.service'
 import {category} from '../models/category.model.'
 import {SelectItem} from 'primeng/api';
 
@@ -18,31 +18,31 @@ export class SignUpComponent implements OnInit {
 
   constructor(private _formBuilder: FormBuilder,private ConfigService: ConfigService,) { }
 
-  personalData = "بيانات شخصية"
-  educationalData = "بيانات دراسية"
-  NextButton = "التالي"
-  BackButton = "السابق"
-  ResetButton = "إعادة تعيين"
+  personalData = "بيانات شخصية";
+  educationalData = "بيانات دراسية";
+  NextButton = "التالي";
+  BackButton = "السابق";
+  ResetButton = "إعادة تعيين";
   finalStep = "تسجيل الحساب" ;
-  Firstname = "الاسم"
-  Lastname = "الشهرة"
-  ChooseAdate = "تاريخ الولادة"
-  Email = "البريد الإلكتروني"
-  SelectAddress = "السكن"
+  Firstname = "الاسم";
+  Lastname = "الشهرة";
+  ChooseAdate = "تاريخ الولادة";
+  Email = "البريد الإلكتروني";
+  SelectAddress = "السكن";
   phonenumber = "رقم الجوال";
   AddInput = "إضافة شهادة";
   deleteLast = "حذف أخر سجل";
   SelectedCategoriesTopLabel = "العناصر المحددة";
   defaultLabel="إختر الفئات المفضلة";
-  UserName = "اسم المستخدم"
-  Password = "كلمة المرور"
+  UserName = "اسم المستخدم";
+  Password = "كلمة المرور";
   ConfirmPassword = "تأكيد كلمة المرور ";
-  submitForm = "تسجيل"
+  submitForm = "تسجيل";
   countriesList = [] ;
   categoriesArray : category[] = [];
   categoriesSelectItems = [];
   selectedCategories = [];
-  selectedItemsLabel =  "عناصر محددة "
+  selectedItemsLabel =  "عناصر محددة ";
 
    getCategories(){
     this.ConfigService.getCategories()

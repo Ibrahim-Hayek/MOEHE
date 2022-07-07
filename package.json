@@ -37,7 +37,7 @@
     "express": "^4.17.1",
     "font-awesome": "^4.7.0",
     "jquery": "^3.4.1",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "ngx-bar-rating": "^1.1.0",
     "ngx-country-select": "^2.0.6",
     "ngx-slick-carousel": "^0.4.4",
